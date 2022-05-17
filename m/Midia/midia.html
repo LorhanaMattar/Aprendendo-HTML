@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo mídias</title>
+</head>
+<body>
+<h1>mídias</h1>
+   <h2>Audio</h2> 
+   <h3>Simples</h3>
+   <audio src="audio/musica.mp3" preload="metadata" autoplay controls loop></audio>
+
+    <h3>Compatibilidade</h3>
+    <audio controls preload="metadata">
+        <source src="audio/musica.mp3" type="audio/mpeg">
+        <source src="audio/musica.mp3" type="audio/ogg">
+        <source src="audio/musica.mp3" type="audio/wav">
+        <p>Desculpa,tivemos um problema!</p>
+    </audio>
+    
+    <h2>Vídeo</h2>
+    <h3>Local</h3>
+    <h4>Gato</h4>
+    <h5>MP4</h5>
+    <video src="video/gato.mp4" preload="metadata" controls loop autoplay></video> <!--poster="img/logoFundoAzulVGA.jpg"-->
+    
+  
+    <h5>Compatibilidade</h5>
+    <video controls preload="metadata">
+        <source src="video/gatinho.mp4" type="video/mp4">
+        <source src="video/gatinho.m4v" type="video/m4v">
+        <source src="video/gatinho.webm" type="video/m">
+    </video>
+
+    <h3>Servidor</h3>    
+    <h4>Youtube</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5C8sxBK9WAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h4>Vimeo</h4>
+    <iframe src="https://player.vimeo.com/video/607494154?h=2fa065b730" width="640" height="268" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/607494154">
+
+    <h2>Incorporção</h2>
+    <h3>Páginas</h3>
+    <iframe src="../../Texto.html" width="720" frameborder="0"></iframe>
+    <h3>PDF</h3>
+    <iframe src="../../Arquivos/lorem/lorem.pdf" width="1000" height="500"  frameborder="0"></iframe>
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Ncn1jHLPFyI21J1lXhk4J?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+</body>
+</html>
