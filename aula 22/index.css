@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+*:not(body){
+    background-color: chartreuse;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: #c3c3c3;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    width: auto;
+    font-size: 30pt;
+    margin-right: 10px;
+    transform: all ease-in-out 0.5s;
+    position: relative;
+}
+
+/* PSEUDO ELEMENTO */
+nav a::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a:link{
+    color: white;
+    
+}
+nav a:hover{
+    color: black;
+}
+nav a:active{
+    color: red;
+}
+
+nav a:visited{
+    color: green;
+}
+
+/* FORMULARIO*/
+
+form{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form input{
+    width: 80%;
+    margin-top: 10px;
+    font-size: 30pt;
+}
+
+form input[type=text]{
+    background-color: palevioletred;
+    color: white;
+    padding: 5px;
+}
+
+form input::placeholder{
+    color: darkmagenta;
+    font-family: cursive;
+}
+
+form input:nth-child(1){
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+form input[type=email]:invalid{
+    border: 1px solid red;
+    font-family: cursive;
+    background-color: darkred;
+}
+
+form input[type=email]:valid{
+    background-color: green;
+}
+
+form input:focus{
+    background-color: brown;
+}
+
+form input[type=submit]{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+/* SPAN */
+span[title=curto]{
+    background-color: green;
+}
+
+span[title~="curto"]{
+    font-size: 20pt;
+}
+
+/* A LINK */
+
+a[href="https:"]{ /* COMEÇAR */
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+a[href=".pdf"]{ /* COMEÇAR */
+    background-color: green;
+    padding: 2px;
+    color: white;
+    border-radius: 20pt;
+}
+
+/* TABELA */
+
+table{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+thead tr{
+    height: 50px;
+    background-color: #cecece;
+    color: white;
+}
+
+tbody{
+    text-align: center;
+}
+
+
+tbody t:nth-child(n){
+    background-color: bisque;
+}
+tbody t:nth-child(2n){
+    background-color: burlywood;
+}
+tbody t:nth-child(2n -1){
+    background-color: aqua;
+}
+
+
+/* DIV */
+div{
+    width: 80%;
+    margin: auto;
+}
+div > p::first-letter{
+    font-size: 80pt;
+    font-family: cursive;
+    padding: 10px;
+}
+
+div > p::first-line{
+    background-color: green;
+}
+
+div > p::selection{
+    color: white;
+    background-color: yellowgreen;
+
+}
+
+div > p::before{
+    content: "0";
+    font-size: 10pt;
+    color: red;
+}

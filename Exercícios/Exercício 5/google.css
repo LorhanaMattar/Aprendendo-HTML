@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    background-color: #202124 ;
+}
+a{
+    text-decoration: none;
+}
+.tutu{
+    
+}
+/* ICONE MENU */ 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.foto-perfil{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.tutu .cabeçalho .lista-header{
+    display: flex;
+    justify-content: right;
+    padding: 12px;
+    gap: 20px;
+}
+.tutu .cabeçalho .lista-header li a{
+    color: white;
+}
+
+/*MENU APP*/
+.tutu .cabeçalho .lista-header .icone-app div{
+    display: none;
+    position: absolute;
+    right: 1%;
+    color: white;
+    width: 300px;
+    height: 450px;
+}
+.tutu .cabeçalho .lista-header .icone-app:hover div{
+    display: block;
+}
+.tutu .cabeçalho .lista-header .icone-app div ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tutu .cabeçalho .lista-header .icone-app span{
+    color: white;
+}
+/*MENU PERFIL*/
+.foto-perfil-2{
+    width: 80px;
+    height: 80px;
+    border-radius: 80%;
+}
+.tutu .cabeçalho .lista-header .lista-perfil div{
+    display:none;
+    position: absolute;
+    right: 1%;
+    color: white;
+}
+.tutu .cabeçalho .lista-header .lista-perfil:hover div{
+    display:block;
+}
+.tutu .cabeçalho .lista-header .lista-perfil div ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
+}
+.tutu .cabeçalho .lista-header .lista-perfil div ul li span:hover a{
+    background-color: #363636;
+
+}
+.tutu .cabeçalho .lista-header .lista-perfil div ul li span a{
+    padding: 0 10px;
+
+
+}
+.botaog{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+.botaog:hover{
+    cursor: pointer;
+    background-color: #3d3c3c;
+}
+.botaosair{
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+}
+.botaosair:hover{
+    cursor: pointer;
+    background-color:#3d3c3c ;
+}
+
+/*CORPO MEIO PRINCIPAL*/
+#barra-pesquisa{
+    border: 1px solid grey;
+    width: 500px;
+    border-radius: 25px;
+    color: transparent;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+}
+.botao-centro{
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #303134;
+    color: white;
+}
+.botao-centro:hover{
+    border: 1px solid grey;
+}
+.corpo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+}
+.corpo-principal .cp-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.corpo-principal .cp-div h1{
+    font-size: 62px;
+    color: white;
+}
+.corpo-principal .cp-div .pesquisa{
+    width: 100%;
+
+}
+.corpo-principal .cp-div .pesquisa span{
+    position: absolute;
+    padding: 4px;
+    background-color: transparent;
+    color: white;
+
+}
+.corpo-principal .cp-div p{
+    font-size: 12px;
+    color: white;
+
+}
+.corpo-principal .cp-div p a{
+    color: #8ab4f8;
+}
+.corpo-principal .cp-div p a:hover{
+    text-decoration: underline;
+}
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #171717;
+}
+.rodape .brasil{
+    display: flex;
+    justify-content: left;
+    padding: 15px 30px;
+    border-bottom: 1px solid #212327;
+    font-size: 15px;
+    color: #9aa0a6;
+}
+.link-rodape{
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #9aa0a6;
+}
+.lista-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.rodape div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 14px;
+}
